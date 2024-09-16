@@ -1,0 +1,9 @@
+node_modules
+.env
+log.json
+msg.json
+src/controllers/cert.p12
+dist/controllers/cert.p12
+dist/certificate-chain-prod.crt
+temp/*
+dist/public/pdfs/*

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pix</title>
+    <link rel="shortcut icon" href="/icons/icone_api.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/pix.css">
+</head>
+<body>
+    <main>
+        <%- include('includes/messages') %>
+        <div><h1>Cliente: <%- pppoe  %></h1></div>
+        <div><h1>Valor: <%- valor  %></h1></div>
+        <div>
+            <h3>Pix: <span id="pixCode"><%- link  %></span></h3>
+        </div>
+        <!-- <% if (typeof dataVenc !== 'undefined') { %>
+            <div><h3>Data do Vencimento: <%- dataVenc %></h3></div>
+        <% } %> -->
+        <div><button id="copyButton">Copiar Pix</button></div>
+    </main>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function() {
+            var pixCodeElement = document.getElementById('pixCode');
+            var pixCode = pixCodeElement.textContent || pixCodeElement.innerText;
+
+            var tempInput = document.createElement('input');
+            tempInput.value = pixCode;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            alert('Código Pix copiado para a área de transferência!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(255, 115, 0);
+    text-shadow: 1px 1px 5px black;
+}
+
+body{
+    background-image: linear-gradient(to left, rgb(82, 82, 82), rgb(46, 45, 45));
+    background-size: cover;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: 0;
+    width: 400px;
+    padding: 20px 0px;
+    background-color: rgb(48, 22, 1);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+button:hover{
+    border: 0;
+    background-color: rgb(44, 97, 0);
+    cursor: pointer;
+    
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="shortcut icon" href="icons/icone_api.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header>Login: <%- locals.login %></header>
+    <%- include('includes/messages') %>
+    <main>
+        <h1>Vencidos:</h1>
+        <a href="menu/LastPix">Gerar Pix do Ultimo Vencimento</a>
+        <a href="menu/AllPix">Gerar Pix Somado de Todos os Vencimentos</a>
+        <h1>Em Aberto:</h1>
+        <a href="menu/LastPixOpen">Gerar Pix à Vencer</a>
+    </main>
+</body>
+</html>

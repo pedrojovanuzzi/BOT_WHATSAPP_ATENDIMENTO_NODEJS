@@ -1,0 +1,46 @@
+main{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 5px 0px;
+}
+
+input[type='text']{
+    padding: 10px;
+}
+
+input[type='password']{
+    padding: 10px;
+}
+
+input[type='submit']{
+    padding: 10px;
+    border: 0;
+    background-color: rgb(255, 116, 3);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+input[type='submit']:hover{
+    padding: 10px;
+    border: 0;
+    background-color: rgb(44, 97, 0);
+    cursor: pointer;
+}
+
+body{
+    height: 99vh;
+    overflow: hidden;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgb(36, 35, 35), rgb(75, 75, 80));
+    text-align: center;
+}

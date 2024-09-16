@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pix Ultimo Aberto</title>
+    <link rel="shortcut icon" href="/icons/icone_api.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+<body>
+    <header>Login: <%- locals.login %> :: Pix Ultimo Aberto</header>
+    <main>
+        <%- include('includes/messages') %>
+        <form action="/pix/geradorAberto" method="post">
+            <input type="text" name="pppoe" id="" placeholder="PPPOE do cliente" required>
+            <input type="text" name="cpf" id="" placeholder="CPF do cliente" required>
+            <input type="submit" value="OK">
+        </form>
+    </main>
+</body>
+</html>

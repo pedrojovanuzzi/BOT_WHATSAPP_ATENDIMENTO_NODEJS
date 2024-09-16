@@ -1,0 +1,78 @@
+header{
+    position: absolute;
+    padding: 20px 0px;
+    background-color: rgb(31, 31, 31);
+    color: orange;
+    text-indent: 2em;
+    top: 0;
+    width: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    padding: 15px;
+    margin: 5px 0px;
+}
+
+input[type='submit']{
+    padding: 15px;
+}
+
+input[type='submit']{
+    padding: 15px;
+    border: 0;
+    background-color: rgb(255, 116, 3);
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+input[type='submit']:hover{
+    padding: 15px;
+    border: 0;
+    background-color: rgb(44, 97, 0);
+    cursor: pointer;
+    
+}
+
+a{
+    border: 0;
+    width: 400px;
+    padding: 20px 0px;
+    background-color: rgb(255, 116, 3);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+a:hover{
+    border: 0;
+    background-color: rgb(44, 97, 0);
+    cursor: pointer;
+    
+}
+
+
